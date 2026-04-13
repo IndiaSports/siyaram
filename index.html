@@ -10,7 +10,8 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'Inter', sans-serif; color:var(--t); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 100%), url('https://img.freepik.com/free-vector/elegant-hand-painted-pastel-pink-alcohol-ink-background_1048-19138.jpg?w=740') center/cover fixed; }
   .cnt { max-width:1000px; margin:0 auto; min-height:100vh; }
-  .bnr { height:220px; background:var(--p); width:100%; border-bottom:5px solid var(--s); }
+  /* Stadium Cover Background added inside the card area */
+  .bnr { height:220px; background: url('https://png.pngtree.com/thumb_back/fh260/background/20250528/pngtree-a-vibrant-cricket-stadium-at-dusk-featuring-colorful-flags-on-the-image_17350703.jpg') center/cover no-repeat; width:100%; border-bottom:4px solid var(--s); }
   .lay { display:grid; grid-template-columns:320px 1fr; gap:20px; padding:0 20px 40px; }
   .side { margin-top:-80px; background:var(--w); border:1px solid #e2e8f0; border-radius:20px; padding:25px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
   .avt { width:140px; height:140px; border-radius:50%; margin:0 auto 15px; border:6px solid var(--w); object-fit:cover; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
@@ -20,12 +21,13 @@
   .stc { background:#f8fafc; padding:10px 2px; border-radius:10px; border:1px solid #edf2f7; }
   .stc b { display:block; font-size:16px; font-weight:800; }
   .stc span { font-size:9px; color:var(--m); text-transform:uppercase; font-weight:700; }
-  .btn { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; background:linear-gradient(135deg, var(--p), var(--s)); color:#fff; padding:18px; border-radius:12px; text-decoration:none; font-weight:800; font-size:15px; border:none; text-transform:uppercase; box-shadow:0 4px 0 rgba(0,0,0,0.1); }
+  .btn { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; background:linear-gradient(135deg, var(--p), var(--s)); color:#fff; padding:18px; border-radius:12px; text-decoration:none; font-weight:800; font-size:15px; border:none; text-transform:uppercase; box-shadow:0 4px 0 rgba(0,0,0,0.1); transition: 0.2s; }
+  .btn:active { transform: translateY(2px); box-shadow: none; }
   .btn svg { width:22px; height:22px; fill:#fff; }
   .main { padding-top:40px; }
   .sttl { font-size:20px; font-weight:800; margin-bottom:15px; border-left:5px solid var(--s); padding-left:10px; }
-  .box { background:var(--w); padding:25px; border-radius:15px; border:1px solid #e2e8f0; font-size:15px; line-height:1.7; }
-  @media (max-width:768px) { .lay { grid-template-columns:1fr; padding:0 10px 20px; } .side { margin-top:-60px; } .bnr { height:150px; } }
+  .box { background:var(--w); padding:25px; border-radius:15px; border:1px solid #e2e8f0; font-size:15px; line-height:1.7; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+  @media (max-width:768px) { .lay { grid-template-columns:1fr; padding:0 10px 20px; } .side { margin-top:-60px; } .bnr { height:160px; } }
 </style>
 </head>
 <body>
@@ -41,7 +43,7 @@
       <div class="sts">
         <div class="stc"><b>225K+</b><span>Fans</span></div>
         <div class="stc"><b>3000+</b><span>Posts</span></div>
-        <div class="stc"><b>96%</b><span>Expert</span></div>
+        <div class="stc"><b>Expert</b><span>Analysis</span></div>
       </div>
       <a href="https://t.me/+kJ6E9E2W7U4zY2Q1" class="btn">
         <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.896-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
@@ -50,7 +52,7 @@
     </aside>
 
     <main class="main">
-      <h2 class="sttl">About Channel</h2>
+      <h2 class="sttl">Channel Overview</h2>
       <div class="box">
         <b>Welcome to Cricket Queen Siya's official channel!</b><br><br>
         Get access to premium cricket analysis, fastest session updates, and high-quality match insights. Siya covers all major leagues including IPL, BBL, PSL, and ICC tournaments. Join our professional community of 225,000+ members today and take your cricket experience to the next level.
